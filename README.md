@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# Desafio 01 - Praticando os Conceitos do ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este desafio faz parte do módulo "Fundamentos do ReactJS" do curso Ignite da Rocketseat. O objetivo é consolidar os conceitos aprendidos por meio do desenvolvimento de uma aplicação de lista de tarefas (ToDo List).
 
-Currently, two official plugins are available:
+## Objetivos do Desafio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Reforçar os conceitos fundamentais do ReactJS**: componentização, estado, propriedades e manipulação de eventos.
+- **Praticar a criação de interfaces interativas**: permitindo ao usuário adicionar, remover e marcar tarefas como concluídas.
+- **Aplicar o uso de hooks**: como o `useState` para gerenciar o estado da aplicação.
 
-## Expanding the ESLint configuration
+## Funcionalidades Implementadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Adicionar uma nova tarefa**: o usuário pode inserir uma nova tarefa na lista.
+- **Remover uma tarefa existente**: possibilidade de excluir uma tarefa da lista.
+- **Marcar e desmarcar uma tarefa como concluída**: o usuário pode indicar se uma tarefa foi finalizada ou não.
 
-- Configure the top-level `parserOptions` property like this:
+## Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **ReactJS**: biblioteca principal para construção da interface.
+- **TypeScript**: para adicionar tipagem estática ao JavaScript, aumentando a segurança e previsibilidade do código.
+- **Vite**: ferramenta de build para desenvolvimento rápido e eficiente.
+- **CSS Modules**: para estilização dos componentes de forma modular e isolada.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Aprendizados
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Componentização**: dividir a aplicação em componentes reutilizáveis e independentes.
+- **Gerenciamento de Estado**: utilizar o hook `useState` para controlar o estado interno dos componentes.
+- **Manipulação de Eventos**: lidar com eventos de usuário, como cliques e submissões de formulários.
+- **Imutabilidade**: princípio de não modificar diretamente os dados, mas sim criar novas referências ao atualizar o estado.
+- **Propriedades (Props)**: passar dados e funções entre componentes para promover a comunicação entre eles.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Como Executar o Projeto
+
+1. **Clonar o repositório**:
+
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+2. **Instalar as dependências**:
+  
+  ```bash
+  cd nome-do-repositorio
+  npm install
