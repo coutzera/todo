@@ -35,8 +35,21 @@ Este desafio faz parte do módulo "Fundamentos do ReactJS" do curso Ignite da Ro
 
    ```bash
    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+
 2. **Instalar as dependências**:
   
-  ```bash
-  cd nome-do-repositorio
-  npm install
+     ```bash
+     cd nome-do-repositorio
+     npm install
+
+3. **Iniciar a aplicação**:
+  
+     ```bash
+     npm run dev
+     
+## Deploy do Projeto
+
+O projeto está disponível online e pode ser acessado no seguinte link:
+
+🔗 [Praticando os Conceitos do ReactJS - Deploy](https://praticando-os-conceitos.vercel.app/)
+
